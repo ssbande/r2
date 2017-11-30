@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack -d --watch",
-    "build": "webpack -p"
+    "prestart": "webpack -d",
+    "start": "node server.js",
+    "prepublish": "webpack -p",
+    "publish": "node server.js"
   },
   "author": "",
   "license": "ISC",
